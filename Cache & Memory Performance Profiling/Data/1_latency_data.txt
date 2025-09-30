@@ -1,0 +1,14 @@
+Using buffer size of 200.000MiB
+*** Unable to modify prefetchers (try executing 'modprobe msr')
+*** So, enabling random access for latency measurements
+Each iteration took 337.2 base frequency clocks (       135.1   ns)
+
+Using buffer size of 200.000MiB
+*** Unable to modify prefetchers (try executing 'modprobe msr')
+*** So, enabling random access for latency measurements
+Each iteration took 370.0 base frequency clocks (       148.2   ns)
+
+Using buffer size of 200.000MiB
+*** Unable to modify prefetchers (try executing 'modprobe msr')
+*** So, enabling random access for latency measurements
+Each iteration took 356.1 base frequency clocks (       142.7   ns)
