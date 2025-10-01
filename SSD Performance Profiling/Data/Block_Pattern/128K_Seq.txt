@@ -1,0 +1,84 @@
+
+Input parameters:
+
+        timespan:   1
+        -------------
+        duration: 60s
+        warm up time: 5s
+        cool down time: 0s
+        gathering IOPS at intervals of 1000ms
+        random seed: 0
+        path: 'C:\test_data\disk_metrics.dat'
+                think time: 0ms
+                burst size: 0
+                software cache disabled
+                hardware write cache disabled, writethrough on
+                performing read test
+                block size: 128KiB
+                using sequential I/O (stride: 128KiB)
+                number of outstanding I/O operations per thread: 16
+                threads per file: 1
+                using I/O Completion Ports
+                IO priority: normal
+
+System information:
+
+        computer name: ZHNA
+        start time: 2025/10/01 17:02:44 UTC
+
+        cpu count:              16
+        core count:             8
+        group count:            1
+        node count:             1
+        socket count:           1
+        heterogeneous cores:    n
+
+        active power scheme:    Balanced (381b4222-f694-41f0-9685-ff5bb260df2e)
+
+Results for timespan 1:
+*******************************************************************************
+
+actual test time:       60.01s
+thread count:           1
+
+Core | CPU |  Usage |  User  | Kernel |  Idle
+-----------------------------------------------
+    0|    0|  55.49%|   1.74%|  53.75%|  44.51%
+    0|    1|   9.79%|   7.01%|   2.79%|  90.21%
+    1|    2|  14.77%|  12.29%|   2.47%|  85.23%
+    1|    3|   7.84%|   6.43%|   1.41%|  92.16%
+    2|    4|  11.41%|   8.70%|   2.71%|  88.59%
+    2|    5|   7.21%|   5.23%|   1.98%|  92.79%
+    3|    6|  10.94%|   8.67%|   2.27%|  89.06%
+    3|    7|   8.93%|   6.98%|   1.95%|  91.07%
+    4|    8|   6.41%|   4.27%|   2.14%|  93.59%
+    4|    9|   4.66%|   3.36%|   1.30%|  95.34%
+    5|   10|   7.03%|   5.21%|   1.82%|  92.97%
+    5|   11|   4.61%|   3.20%|   1.41%|  95.39%
+    6|   12|   6.59%|   4.56%|   2.03%|  93.41%
+    6|   13|   4.17%|   2.99%|   1.17%|  95.83%
+    7|   14|   6.07%|   4.09%|   1.98%|  93.93%
+    7|   15|   4.66%|   2.97%|   1.69%|  95.34%
+-----------------------------------------------
+       avg.|  10.66%|   5.48%|   5.18%|  89.34%
+
+Total IO
+thread |       bytes     |     I/Os     |    MiB/s   |  I/O per s | IopsStdDev |  file
+-------------------------------------------------------------------------------------------
+     0 |    226251505664 |      1726162 |    3595.75 |   28766.03 |    4624.34 | C:\test_data\disk_metrics.dat (10GiB)
+-------------------------------------------------------------------------------------------
+total:      226251505664 |      1726162 |    3595.75 |   28766.03 |    4624.34
+
+Read IO
+thread |       bytes     |     I/Os     |    MiB/s   |  I/O per s | IopsStdDev |  file
+-------------------------------------------------------------------------------------------
+     0 |    226251505664 |      1726162 |    3595.75 |   28766.03 |    4624.34 | C:\test_data\disk_metrics.dat (10GiB)
+-------------------------------------------------------------------------------------------
+total:      226251505664 |      1726162 |    3595.75 |   28766.03 |    4624.34
+
+Write IO
+thread |       bytes     |     I/Os     |    MiB/s   |  I/O per s | IopsStdDev |  file
+-------------------------------------------------------------------------------------------
+     0 |               0 |            0 |       0.00 |       0.00 |       0.00 | C:\test_data\disk_metrics.dat (10GiB)
+-------------------------------------------------------------------------------------------
+total:                 0 |            0 |       0.00 |       0.00 |       0.00

@@ -1,0 +1,113 @@
+
+Input parameters:
+
+        timespan:   1
+        -------------
+        duration: 60s
+        warm up time: 5s
+        cool down time: 0s
+        measuring latency
+        gathering IOPS at intervals of 1000ms
+        random seed: 0
+        path: 'C:\test_data\disk_metrics.dat'
+                think time: 0ms
+                burst size: 0
+                software cache disabled
+                hardware write cache disabled, writethrough on
+                performing read test
+                block size: 4KiB
+                using random I/O (alignment: 4KiB)
+                number of outstanding I/O operations per thread: 2
+                threads per file: 4
+                using I/O Completion Ports
+                IO priority: normal
+
+System information:
+
+        computer name: ZHNA
+        start time: 2025/10/01 17:30:22 UTC
+
+        cpu count:              16
+        core count:             8
+        group count:            1
+        node count:             1
+        socket count:           1
+        heterogeneous cores:    n
+
+        active power scheme:    Balanced (381b4222-f694-41f0-9685-ff5bb260df2e)
+
+Results for timespan 1:
+*******************************************************************************
+
+actual test time:       60.02s
+thread count:           4
+
+Core | CPU |  Usage |  User  | Kernel |  Idle
+-----------------------------------------------
+    0|    0|  50.69%|   2.24%|  48.45%|  49.31%
+    0|    1|  50.14%|   2.79%|  47.36%|  49.86%
+    1|    2|  50.35%|   3.64%|  46.71%|  49.65%
+    1|    3|  48.61%|   2.73%|  45.87%|  51.39%
+    2|    4|   7.39%|   3.44%|   3.96%|  92.61%
+    2|    5|   4.63%|   2.55%|   2.08%|  95.37%
+    3|    6|  11.69%|   8.15%|   3.54%|  88.31%
+    3|    7|  12.37%|   8.59%|   3.78%|  87.63%
+    4|    8|   6.87%|   4.43%|   2.45%|  93.13%
+    4|    9|   5.96%|   3.59%|   2.37%|  94.04%
+    5|   10|   7.34%|   4.50%|   2.84%|  92.66%
+    5|   11|   5.99%|   3.85%|   2.13%|  94.01%
+    6|   12|   6.72%|   4.24%|   2.47%|  93.28%
+    6|   13|   5.00%|   3.23%|   1.77%|  95.00%
+    7|   14|   5.55%|   3.57%|   1.98%|  94.45%
+    7|   15|   5.96%|   4.40%|   1.56%|  94.04%
+-----------------------------------------------
+       avg.|  17.83%|   4.12%|  13.71%|  82.17%
+
+Total IO
+thread |       bytes     |     I/Os     |    MiB/s   |  I/O per s |  AvgLat  | IopsStdDev | LatStdDev |  file
+------------------------------------------------------------------------------------------------------------------
+     0 |      4993945600 |      1219225 |      79.36 |   20315.33 |    0.094 |     258.03 |     0.076 | C:\test_data\disk_metrics.dat (10GiB)
+     1 |      5037780992 |      1229927 |      80.05 |   20493.65 |    0.094 |     246.27 |     0.047 | C:\test_data\disk_metrics.dat (10GiB)
+     2 |      4914950144 |      1199939 |      78.10 |   19993.98 |    0.096 |     346.09 |     0.069 | C:\test_data\disk_metrics.dat (10GiB)
+     3 |      4985487360 |      1217160 |      79.22 |   20280.92 |    0.094 |     240.93 |     0.053 | C:\test_data\disk_metrics.dat (10GiB)
+------------------------------------------------------------------------------------------------------------------
+total:       19932164096 |      4866251 |     316.73 |   81083.88 |    0.095 |     981.39 |     0.062
+
+Read IO
+thread |       bytes     |     I/Os     |    MiB/s   |  I/O per s |  AvgLat  | IopsStdDev | LatStdDev |  file
+------------------------------------------------------------------------------------------------------------------
+     0 |      4993945600 |      1219225 |      79.36 |   20315.33 |    0.094 |     258.03 |     0.076 | C:\test_data\disk_metrics.dat (10GiB)
+     1 |      5037780992 |      1229927 |      80.05 |   20493.65 |    0.094 |     246.27 |     0.047 | C:\test_data\disk_metrics.dat (10GiB)
+     2 |      4914950144 |      1199939 |      78.10 |   19993.98 |    0.096 |     346.09 |     0.069 | C:\test_data\disk_metrics.dat (10GiB)
+     3 |      4985487360 |      1217160 |      79.22 |   20280.92 |    0.094 |     240.93 |     0.053 | C:\test_data\disk_metrics.dat (10GiB)
+------------------------------------------------------------------------------------------------------------------
+total:       19932164096 |      4866251 |     316.73 |   81083.88 |    0.095 |     981.39 |     0.062
+
+Write IO
+thread |       bytes     |     I/Os     |    MiB/s   |  I/O per s |  AvgLat  | IopsStdDev | LatStdDev |  file
+------------------------------------------------------------------------------------------------------------------
+     0 |               0 |            0 |       0.00 |       0.00 |    0.000 |       0.00 |       N/A | C:\test_data\disk_metrics.dat (10GiB)
+     1 |               0 |            0 |       0.00 |       0.00 |    0.000 |       0.00 |       N/A | C:\test_data\disk_metrics.dat (10GiB)
+     2 |               0 |            0 |       0.00 |       0.00 |    0.000 |       0.00 |       N/A | C:\test_data\disk_metrics.dat (10GiB)
+     3 |               0 |            0 |       0.00 |       0.00 |    0.000 |       0.00 |       N/A | C:\test_data\disk_metrics.dat (10GiB)
+------------------------------------------------------------------------------------------------------------------
+total:                 0 |            0 |       0.00 |       0.00 |    0.000 |       0.00 |       N/A
+
+Total latency distribution:
+  %-ile |  Read (ms) | Write (ms) | Total (ms)
+----------------------------------------------
+    min |      0.031 |        N/A |      0.031
+   25th |      0.084 |        N/A |      0.084
+   50th |      0.092 |        N/A |      0.092
+   75th |      0.100 |        N/A |      0.100
+   90th |      0.111 |        N/A |      0.111
+   95th |      0.124 |        N/A |      0.124
+   99th |      0.156 |        N/A |      0.156
+3-nines |      0.399 |        N/A |      0.399
+4-nines |      1.114 |        N/A |      1.114
+5-nines |     10.582 |        N/A |     10.582
+6-nines |     16.673 |        N/A |     16.673
+7-nines |     20.169 |        N/A |     20.169
+8-nines |     20.169 |        N/A |     20.169
+9-nines |     20.169 |        N/A |     20.169
+    max |     20.169 |        N/A |     20.169

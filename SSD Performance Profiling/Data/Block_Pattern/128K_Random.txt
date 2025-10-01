@@ -1,0 +1,85 @@
+ommand Line: C:\Users\fangw2\CLionProjects\Computer-Systems-Projects\amd64\diskspd.exe -o16 -t1 -r -w0 -b128K -d60 -Sh -D C:\test_data\disk_metrics.dat
+
+Input parameters:
+
+        timespan:   1
+        -------------
+        duration: 60s
+        warm up time: 5s
+        cool down time: 0s
+        gathering IOPS at intervals of 1000ms
+        random seed: 0
+        path: 'C:\test_data\disk_metrics.dat'
+                think time: 0ms
+                burst size: 0
+                software cache disabled
+                hardware write cache disabled, writethrough on
+                performing read test
+                block size: 128KiB
+                using random I/O (alignment: 128KiB)
+                number of outstanding I/O operations per thread: 16
+                threads per file: 1
+                using I/O Completion Ports
+                IO priority: normal
+
+System information:
+
+        computer name: ZHNA
+        start time: 2025/10/01 16:42:17 UTC
+
+        cpu count:              16
+        core count:             8
+        group count:            1
+        node count:             1
+        socket count:           1
+        heterogeneous cores:    n
+
+        active power scheme:    Balanced (381b4222-f694-41f0-9685-ff5bb260df2e)
+
+Results for timespan 1:
+*******************************************************************************
+
+actual test time:       60.00s
+thread count:           1
+
+Core | CPU |  Usage |  User  | Kernel |  Idle
+-----------------------------------------------
+    0|    0|  55.99%|   2.37%|  53.62%|  44.01%
+    0|    1|   2.87%|   1.59%|   1.28%|  97.13%
+    1|    2|  15.29%|  12.76%|   2.53%|  84.71%
+    1|    3|   8.31%|   6.25%|   2.06%|  91.69%
+    2|    4|  14.22%|  11.56%|   2.66%|  85.78%
+    2|    5|   9.24%|   7.37%|   1.88%|  90.76%
+    3|    6|  11.82%|   9.06%|   2.76%|  88.18%
+    3|    7|   8.10%|   5.39%|   2.71%|  91.90%
+    4|    8|   6.28%|   4.19%|   2.08%|  93.72%
+    4|    9|   5.03%|   3.33%|   1.69%|  94.97%
+    5|   10|   6.88%|   5.31%|   1.56%|  93.12%
+    5|   11|   4.74%|   3.65%|   1.09%|  95.26%
+    6|   12|   4.38%|   2.73%|   1.64%|  95.62%
+    6|   13|   3.85%|   2.66%|   1.20%|  96.15%
+    7|   14|   4.87%|   2.66%|   2.21%|  95.13%
+    7|   15|   4.48%|   2.89%|   1.59%|  95.52%
+-----------------------------------------------
+       avg.|  10.40%|   5.24%|   5.16%|  89.60%
+
+Total IO
+thread |       bytes     |     I/Os     |    MiB/s   |  I/O per s | IopsStdDev |  file
+-------------------------------------------------------------------------------------------
+     0 |    236455460864 |      1804012 |    3758.28 |   30066.23 |    4167.64 | C:\test_data\disk_metrics.dat (10GiB)
+-------------------------------------------------------------------------------------------
+total:      236455460864 |      1804012 |    3758.28 |   30066.23 |    4167.64
+
+Read IO
+thread |       bytes     |     I/Os     |    MiB/s   |  I/O per s | IopsStdDev |  file
+-------------------------------------------------------------------------------------------
+     0 |    236455460864 |      1804012 |    3758.28 |   30066.23 |    4167.64 | C:\test_data\disk_metrics.dat (10GiB)
+-------------------------------------------------------------------------------------------
+total:      236455460864 |      1804012 |    3758.28 |   30066.23 |    4167.64
+
+Write IO
+thread |       bytes     |     I/Os     |    MiB/s   |  I/O per s | IopsStdDev |  file
+-------------------------------------------------------------------------------------------
+     0 |               0 |            0 |       0.00 |       0.00 |       0.00 | C:\test_data\disk_metrics.dat (10GiB)
+-------------------------------------------------------------------------------------------
+total:                 0 |            0 |       0.00 |       0.00 |       0.00

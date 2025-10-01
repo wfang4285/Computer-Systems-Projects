@@ -1,0 +1,103 @@
+
+Input parameters:
+
+        timespan:   1
+        -------------
+        duration: 60s
+        warm up time: 5s
+        cool down time: 0s
+        measuring latency
+        gathering IOPS at intervals of 1000ms
+        random seed: 0
+        path: 'C:\test_data\disk_metrics.dat'
+                think time: 0ms
+                burst size: 0
+                software cache disabled
+                hardware write cache disabled, writethrough on
+                performing write test
+                block size: 128KiB
+                using sequential I/O (stride: 128KiB)
+                number of outstanding I/O operations per thread: 1
+                threads per file: 1
+                IO priority: normal
+
+System information:
+
+        computer name: ZHNA
+        start time: 2025/10/01 16:04:17 UTC
+
+        cpu count:              16
+        core count:             8
+        group count:            1
+        node count:             1
+        socket count:           1
+        heterogeneous cores:    n
+
+        active power scheme:    Balanced (381b4222-f694-41f0-9685-ff5bb260df2e)
+
+Results for timespan 1:
+*******************************************************************************
+
+actual test time:       60.00s
+thread count:           1
+
+Core | CPU |  Usage |  User  | Kernel |  Idle
+-----------------------------------------------
+    0|    0|  28.20%|   2.29%|  25.91%|  71.80%
+    0|    1|   7.16%|   4.04%|   3.13%|  92.84%
+    1|    2|  16.64%|  12.68%|   3.96%|  83.36%
+    1|    3|  10.03%|   7.60%|   2.42%|  89.97%
+    2|    4|  14.04%|   9.82%|   4.22%|  85.96%
+    2|    5|   9.14%|   6.23%|   2.92%|  90.86%
+    3|    6|  12.56%|   8.44%|   4.12%|  87.44%
+    3|    7|   9.59%|   6.85%|   2.74%|  90.41%
+    4|    8|   9.17%|   5.94%|   3.23%|  90.83%
+    4|    9|   6.54%|   4.27%|   2.27%|  93.46%
+    5|   10|   9.09%|   6.20%|   2.89%|  90.91%
+    5|   11|   6.33%|   4.43%|   1.90%|  93.67%
+    6|   12|   8.93%|   6.20%|   2.74%|  91.07%
+    6|   13|   6.77%|   4.17%|   2.60%|  93.23%
+    7|   14|  10.58%|   7.16%|   3.41%|  89.42%
+    7|   15|   5.29%|   3.52%|   1.77%|  94.71%
+-----------------------------------------------
+       avg.|  10.63%|   6.24%|   4.39%|  89.37%
+
+Total IO
+thread |       bytes     |     I/Os     |    MiB/s   |  I/O per s |  AvgLat  | IopsStdDev | LatStdDev |  file
+------------------------------------------------------------------------------------------------------------------
+     0 |     59656503296 |       455143 |     948.14 |    7585.13 |    0.131 |    2727.95 |     0.515 | C:\test_data\disk_metrics.dat (10GiB)
+------------------------------------------------------------------------------------------------------------------
+total:       59656503296 |       455143 |     948.14 |    7585.13 |    0.131 |    2727.95 |     0.515
+
+Read IO
+thread |       bytes     |     I/Os     |    MiB/s   |  I/O per s |  AvgLat  | IopsStdDev | LatStdDev |  file
+------------------------------------------------------------------------------------------------------------------
+     0 |               0 |            0 |       0.00 |       0.00 |    0.000 |       0.00 |       N/A | C:\test_data\disk_metrics.dat (10GiB)
+------------------------------------------------------------------------------------------------------------------
+total:                 0 |            0 |       0.00 |       0.00 |    0.000 |       0.00 |       N/A
+
+Write IO
+thread |       bytes     |     I/Os     |    MiB/s   |  I/O per s |  AvgLat  | IopsStdDev | LatStdDev |  file
+------------------------------------------------------------------------------------------------------------------
+     0 |     59656503296 |       455143 |     948.14 |    7585.13 |    0.131 |    2727.95 |     0.515 | C:\test_data\disk_metrics.dat (10GiB)
+------------------------------------------------------------------------------------------------------------------
+total:       59656503296 |       455143 |     948.14 |    7585.13 |    0.131 |    2727.95 |     0.515
+
+Total latency distribution:
+  %-ile |  Read (ms) | Write (ms) | Total (ms)
+----------------------------------------------
+    min |        N/A |      0.055 |      0.055
+   25th |        N/A |      0.067 |      0.067
+   50th |        N/A |      0.070 |      0.070
+   75th |        N/A |      0.102 |      0.102
+   90th |        N/A |      0.203 |      0.203
+   95th |        N/A |      0.358 |      0.358
+   99th |        N/A |      0.681 |      0.681
+3-nines |        N/A |      6.589 |      6.589
+4-nines |        N/A |     19.206 |     19.206
+5-nines |        N/A |     32.561 |     32.561
+6-nines |        N/A |     73.898 |     73.898
+7-nines |        N/A |     73.898 |     73.898
+8-nines |        N/A |     73.898 |     73.898
+9-nines |        N/A |     73.898 |     73.898
+    max |        N/A |     73.898 |     73.898
